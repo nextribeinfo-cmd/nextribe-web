@@ -1,0 +1,403 @@
+---
+import '../styles/global.css';
+---
+
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="株式会社NEXTRIBE - 現場から、日本の通信を支える。九州を中心に全国展開のフィールドセールス企業" />
+  <title>株式会社NEXTRIBE</title>
+  <link rel="icon" href="/favicon.ico" />
+</head>
+<body>
+
+<!-- Navigation -->
+<nav id="navbar" class="fixed top-0 w-full z-50 py-4 px-6 md:px-12 flex items-center justify-between transition-all duration-300">
+  <a href="#" class="flex items-center gap-3">
+    <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="ng" x1="0" y1="0" x2="38" y2="38" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="#f5d78e"/>
+          <stop offset="50%" stop-color="#c9a84c"/>
+          <stop offset="100%" stop-color="#f5d78e"/>
+        </linearGradient>
+      </defs>
+      <!-- Bold N mark -->
+      <path d="M6 8 L6 30 L11 30 L11 17 L22 30 L27 30 L27 8 L22 8 L22 21 L11 8 Z" fill="url(#ng)"/>
+      <!-- Accent slash -->
+      <rect x="29" y="8" width="3" height="22" rx="1.5" fill="url(#ng)" opacity="0.5"/>
+    </svg>
+    <span class="text-lg font-black tracking-widest gradient-text">NEXTRIBE</span>
+  </a>
+  <ul class="hidden md:flex gap-10 text-sm tracking-wider text-gray-300">
+    <li><a href="#about" class="hover:text-yellow-400 transition-colors">ABOUT</a></li>
+    <li><a href="#service" class="hover:text-yellow-400 transition-colors">SERVICE</a></li>
+    <li><a href="/company" class="hover:text-yellow-400 transition-colors">COMPANY</a></li>
+    <li><a href="#recruit" class="hover:text-yellow-400 transition-colors">RECRUIT</a></li>
+    <li><a href="#contact" class="hover:text-yellow-400 transition-colors">CONTACT</a></li>
+  </ul>
+  <button id="menu-btn" class="md:hidden text-white p-2">
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+    </svg>
+  </button>
+</nav>
+
+<!-- Mobile menu -->
+<div id="mobile-menu" class="fixed inset-0 z-40 bg-black/97 flex flex-col items-center justify-center gap-10 text-2xl font-light tracking-widest hidden">
+  <button id="menu-close" class="absolute top-6 right-6 text-gray-400">
+    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+    </svg>
+  </button>
+  <a href="#about" class="mobile-link hover:text-yellow-400 transition-colors">ABOUT</a>
+  <a href="#service" class="mobile-link hover:text-yellow-400 transition-colors">SERVICE</a>
+  <a href="/company" class="mobile-link hover:text-yellow-400 transition-colors">COMPANY</a>
+  <a href="#recruit" class="mobile-link hover:text-yellow-400 transition-colors">RECRUIT</a>
+  <a href="#contact" class="mobile-link hover:text-yellow-400 transition-colors">CONTACT</a>
+</div>
+
+<!-- Hero -->
+<section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+  <div class="absolute inset-0" style="background-image: linear-gradient(rgba(201,168,76,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(201,168,76,0.04) 1px, transparent 1px); background-size: 60px 60px;"></div>
+  <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full opacity-10" style="background: radial-gradient(circle, #c9a84c 0%, transparent 70%);"></div>
+
+  <div class="relative z-10 text-center px-6 animate-float">
+    <!-- Hero Logo -->
+    <div class="flex justify-center mb-8">
+      <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="hg" x1="0" y1="0" x2="80" y2="80" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#f5d78e"/>
+            <stop offset="50%" stop-color="#c9a84c"/>
+            <stop offset="100%" stop-color="#f5d78e"/>
+          </linearGradient>
+        </defs>
+        <!-- Large N -->
+        <path d="M12 16 L12 64 L24 64 L24 38 L48 64 L56 64 L56 16 L44 16 L44 42 L20 16 Z" fill="url(#hg)"/>
+        <!-- Accent lines -->
+        <rect x="61" y="16" width="7" height="48" rx="3.5" fill="url(#hg)" opacity="0.4"/>
+        <rect x="61" y="16" width="7" height="20" rx="3.5" fill="url(#hg)" opacity="0.4"/>
+      </svg>
+    </div>
+    <p class="text-sm md:text-base tracking-[0.4em] text-yellow-400 mb-6 font-light">FIELD SALES COMPANY</p>
+    <h1 class="text-6xl md:text-9xl font-black tracking-tight mb-6 leading-none">
+      <span class="gradient-text">NEX</span><span class="text-white">TRIBE</span>
+    </h1>
+    <div class="h-px w-24 mx-auto mb-8" style="background: linear-gradient(90deg, transparent, #c9a84c, transparent);"></div>
+    <p class="text-lg md:text-2xl font-light text-gray-300 mb-12 tracking-widest">現場から、日本の通信を支える。</p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="#recruit" class="gold-btn px-10 py-4 rounded-full text-black font-bold text-sm tracking-widest">採用情報を見る</a>
+      <a href="#about" class="border border-yellow-400/40 px-10 py-4 rounded-full text-yellow-400 font-light text-sm tracking-widest hover:bg-yellow-400/10 transition-colors">会社概要</a>
+    </div>
+  </div>
+
+  <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-gray-600">
+    <span class="text-xs tracking-widest">SCROLL</span>
+    <div class="w-px h-12 bg-gradient-to-b from-yellow-400/40 to-transparent"></div>
+  </div>
+</section>
+
+<!-- Stats -->
+<section class="py-20 border-y border-white/5">
+  <div class="max-w-5xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
+    <div class="reveal">
+      <p class="text-4xl md:text-5xl font-black gradient-text" data-count="3">0</p>
+      <p class="text-xs tracking-widest text-gray-500 mt-2">キャリア対応</p>
+    </div>
+    <div class="reveal" style="transition-delay:0.1s">
+      <p class="text-4xl md:text-5xl font-black gradient-text">九州</p>
+      <p class="text-xs tracking-widest text-gray-500 mt-2">を中心に全国展開</p>
+    </div>
+    <div class="reveal" style="transition-delay:0.2s">
+      <p class="text-4xl md:text-5xl font-black gradient-text">2016</p>
+      <p class="text-xs tracking-widest text-gray-500 mt-2">年設立</p>
+    </div>
+    <div class="reveal" style="transition-delay:0.3s">
+      <p class="text-4xl md:text-5xl font-black gradient-text">福岡</p>
+      <p class="text-xs tracking-widest text-gray-500 mt-2">を拠点に全国展開</p>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="py-32 px-6 max-w-6xl mx-auto">
+  <div class="reveal mb-20">
+    <p class="text-yellow-400 text-xs tracking-[0.4em] mb-4">01 — ABOUT</p>
+    <h2 class="text-4xl md:text-6xl font-black">理念</h2>
+    <div class="h-px w-16 mt-6" style="background: linear-gradient(90deg, #c9a84c, transparent);"></div>
+  </div>
+
+  <div class="grid md:grid-cols-2 gap-16 items-center">
+    <div class="reveal-left space-y-6">
+      <h3 class="text-2xl md:text-3xl font-bold leading-relaxed">
+        少数精鋭の体制で<br/><span class="gradient-text">機動力</span>を発揮する。
+      </h3>
+      <p class="text-gray-400 leading-loose">
+        私たちNEXTRIBEは、docomo・au・SoftBankのモバイルキャリア3社の販売代行を専門とするフィールドセールス企業です。
+      </p>
+      <p class="text-gray-400 leading-loose">
+        福岡を拠点に九州全域、そして全国各地で展開。大手には真似できない機動力とチーム力で、日本の通信インフラを現場から支えています。
+      </p>
+    </div>
+    <div class="reveal-right">
+      <div class="relative rounded-2xl overflow-hidden" style="border: 1px solid rgba(201,168,76,0.2);">
+        <div class="absolute inset-0" style="background: linear-gradient(135deg, rgba(201,168,76,0.08), transparent);"></div>
+        <div class="relative p-10 space-y-1">
+          {[
+            { label: 'docomo', icon: '●' },
+            { label: 'au', icon: '●' },
+            { label: 'SoftBank', icon: '●' },
+          ].map((c, i) => (
+            <div class="flex items-center gap-4 py-5 border-b border-white/5 last:border-0">
+              <span class="text-yellow-400 text-xs">{c.icon}</span>
+              <span class="text-base font-medium text-gray-200">{c.label}</span>
+              <span class="ml-auto text-xs text-gray-500 tracking-wider">販売代行</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Service -->
+<section id="service" class="py-32 px-6" style="background: linear-gradient(180deg, transparent, rgba(201,168,76,0.03), transparent);">
+  <div class="max-w-6xl mx-auto">
+    <div class="reveal mb-20">
+      <p class="text-yellow-400 text-xs tracking-[0.4em] mb-4">02 — SERVICE</p>
+      <h2 class="text-4xl md:text-6xl font-black">事業内容</h2>
+      <div class="h-px w-16 mt-6" style="background: linear-gradient(90deg, #c9a84c, transparent);"></div>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      {[
+        { num: '01', title: 'モバイル端末販売', desc: '家電量販店・キャリアショップでのdocomo・au・SoftBankの端末販売。接客から契約手続きまでワンストップで対応します。', icon: '📱' },
+        { num: '02', title: '法人営業サポート', desc: '中小企業向けの法人契約営業をサポート。モバイル回線・端末の一括導入から運用支援まで幅広く対応します。', icon: '🏢' },
+        { num: '03', title: '販売スタッフ派遣', desc: '研修済みの即戦力スタッフを全国各地に配置。スポット対応から長期配置まで柔軟に対応可能です。', icon: '🤝' },
+      ].map((s, i) => (
+        <div class="reveal card-hover" style={`transition-delay:${i*0.15}s`}>
+          <div class="h-full rounded-2xl p-8" style="background: linear-gradient(160deg, rgba(255,255,255,0.05), rgba(255,255,255,0.01)); border: 1px solid rgba(255,255,255,0.08);">
+            <p class="text-yellow-400/30 text-5xl font-black mb-6">{s.num}</p>
+            <p class="text-3xl mb-4">{s.icon}</p>
+            <h3 class="text-lg font-bold mb-4">{s.title}</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">{s.desc}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<!-- Company -->
+<section id="company" class="py-32 px-6">
+  <div class="max-w-6xl mx-auto">
+    <div class="reveal mb-20">
+      <p class="text-yellow-400 text-xs tracking-[0.4em] mb-4">03 — COMPANY</p>
+      <h2 class="text-4xl md:text-6xl font-black">会社情報</h2>
+      <div class="h-px w-16 mt-6" style="background: linear-gradient(90deg, #c9a84c, transparent);"></div>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-12 items-start">
+      <div class="reveal-left">
+        <div class="rounded-2xl overflow-hidden" style="border: 1px solid rgba(201,168,76,0.2);">
+          <div class="p-10 space-y-0" style="background: linear-gradient(135deg, rgba(201,168,76,0.06), rgba(0,0,0,0.3));">
+            {[
+              { label: '会社名', value: '株式会社NEXTRIBE' },
+              { label: '設立', value: '2016年' },
+              { label: '所在地', value: '福岡県福岡市城南区荒江' },
+              { label: '事業内容', value: 'モバイルキャリア販売代行' },
+              { label: '対応キャリア', value: 'docomo / au / SoftBank' },
+              { label: '活動エリア', value: '九州を中心に全国各地' },
+            ].map(item => (
+              <div class="flex items-start gap-8 py-5 border-b border-white/5 last:border-0">
+                <span class="text-xs text-yellow-400 tracking-wider w-24 shrink-0 pt-0.5">{item.label}</span>
+                <span class="text-sm text-gray-200 leading-relaxed">{item.value}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal-right">
+        <!-- Map visual -->
+        <div class="rounded-2xl p-10 text-center" style="background: linear-gradient(135deg, rgba(201,168,76,0.06), rgba(0,0,0,0.2)); border: 1px solid rgba(201,168,76,0.15); min-height: 300px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:16px;">
+          <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="60" cy="60" r="55" fill="none" stroke="rgba(201,168,76,0.2)" stroke-width="1"/>
+            <circle cx="60" cy="60" r="40" fill="none" stroke="rgba(201,168,76,0.15)" stroke-width="1"/>
+            <circle cx="60" cy="60" r="25" fill="none" stroke="rgba(201,168,76,0.2)" stroke-width="1"/>
+            <circle cx="60" cy="68" r="6" fill="#c9a84c" opacity="0.9"/>
+            <circle cx="60" cy="68" r="14" fill="rgba(201,168,76,0.2)" class="animate-ping" style="animation: ping 2s cubic-bezier(0,0,0.2,1) infinite;"/>
+            <line x1="60" y1="15" x2="60" y2="105" stroke="rgba(201,168,76,0.1)" stroke-width="1"/>
+            <line x1="15" y1="60" x2="105" y2="60" stroke="rgba(201,168,76,0.1)" stroke-width="1"/>
+          </svg>
+          <p class="gradient-text font-bold text-lg tracking-wider">九州 · 全国</p>
+          <p class="text-gray-500 text-sm">福岡を拠点に全国展開</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Recruit -->
+<section id="recruit" class="py-32 px-6" style="background: linear-gradient(180deg, transparent, rgba(201,168,76,0.03), transparent);">
+  <div class="max-w-6xl mx-auto">
+    <div class="reveal mb-20">
+      <p class="text-yellow-400 text-xs tracking-[0.4em] mb-4">04 — RECRUIT</p>
+      <h2 class="text-4xl md:text-6xl font-black">採用情報</h2>
+      <div class="h-px w-16 mt-6" style="background: linear-gradient(90deg, #c9a84c, transparent);"></div>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6 mb-16">
+      {[
+        { role: 'フィールドセールス', desc: '現場の最前線で通信サービスを届ける販売のプロフェッショナル。' },
+        { role: 'エリアマネージャー', desc: '複数拠点を束ね、チームの成長と売上最大化をリードする存在。' },
+        { role: '販売スタッフ', desc: '各種キャリアショップ・量販店での販売サポート。未経験歓迎。' },
+      ].map((r, i) => (
+        <div class="reveal card-hover" style={`transition-delay:${i*0.15}s`}>
+          <div class="h-full rounded-2xl p-8" style="background: linear-gradient(135deg, rgba(201,168,76,0.08), rgba(201,168,76,0.02)); border: 1px solid rgba(201,168,76,0.2);">
+            <h3 class="text-lg font-bold mb-4 gradient-text">{r.role}</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">{r.desc}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <div class="reveal rounded-2xl p-10 md:p-14" style="background: linear-gradient(135deg, rgba(201,168,76,0.08), rgba(201,168,76,0.02)); border: 1px solid rgba(201,168,76,0.25);">
+      <h3 class="text-2xl font-bold mb-10 gradient-text">募集要項</h3>
+      <div class="grid md:grid-cols-2 gap-0">
+        {[
+          { label: '雇用形態', value: '正社員' },
+          { label: '給与', value: '月給 280,000円〜' },
+          { label: 'ボーナス', value: '業績により支給' },
+          { label: '勤務地', value: '九州を中心に全国各地' },
+          { label: '勤務時間', value: 'シフト制' },
+          { label: '経験', value: '未経験歓迎' },
+        ].map(item => (
+          <div class="flex gap-6 py-5 border-b border-white/5">
+            <span class="text-xs text-yellow-400 tracking-wider w-24 shrink-0 pt-0.5">{item.label}</span>
+            <span class="text-sm text-gray-200">{item.value}</span>
+          </div>
+        ))}
+      </div>
+      <div class="mt-10">
+        <a href="#contact" class="gold-btn inline-block px-12 py-4 rounded-full text-black font-bold text-sm tracking-widest">応募・お問い合わせ</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-32 px-6">
+  <div class="max-w-2xl mx-auto text-center">
+    <div class="reveal mb-16">
+      <p class="text-yellow-400 text-xs tracking-[0.4em] mb-4">05 — CONTACT</p>
+      <h2 class="text-4xl md:text-6xl font-black">お問い合わせ</h2>
+      <div class="h-px w-16 mt-6 mx-auto" style="background: linear-gradient(90deg, transparent, #c9a84c, transparent);"></div>
+    </div>
+
+    <div class="reveal">
+      <p class="text-gray-400 mb-12 leading-loose">採用・事業に関するお問い合わせは<br/>下記フォームまたはメールにてお気軽にどうぞ。</p>
+
+      <form id="contact-form" class="text-left space-y-6">
+        <div>
+          <label class="block text-xs tracking-widest text-gray-400 mb-2">お名前 <span class="text-yellow-400">*</span></label>
+          <input type="text" required class="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 text-sm focus:outline-none focus:border-yellow-400/50 transition-colors" placeholder="山田 太郎" />
+        </div>
+        <div>
+          <label class="block text-xs tracking-widest text-gray-400 mb-2">メールアドレス <span class="text-yellow-400">*</span></label>
+          <input type="email" required class="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 text-sm focus:outline-none focus:border-yellow-400/50 transition-colors" placeholder="example@email.com" />
+        </div>
+        <div>
+          <label class="block text-xs tracking-widest text-gray-400 mb-2">お問い合わせ種別</label>
+          <select class="w-full border border-white/10 rounded-xl px-5 py-4 text-sm focus:outline-none focus:border-yellow-400/50 transition-colors text-gray-300" style="background-color: #111;">
+            <option value="">選択してください</option>
+            <option value="recruit">採用について</option>
+            <option value="business">事業について</option>
+            <option value="other">その他</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-xs tracking-widest text-gray-400 mb-2">メッセージ <span class="text-yellow-400">*</span></label>
+          <textarea required rows="5" class="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 text-sm focus:outline-none focus:border-yellow-400/50 transition-colors resize-none" placeholder="お問い合わせ内容をご記入ください"></textarea>
+        </div>
+        <button type="submit" class="gold-btn w-full py-5 rounded-xl text-black font-bold text-sm tracking-widest">送信する</button>
+      </form>
+
+      <p class="mt-10 text-gray-500 text-sm">
+        メール：<a href="mailto:nextribe.info@gmail.com" class="text-yellow-400 hover:underline">nextribe.info@gmail.com</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-16 px-6 border-t border-white/5">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+    <div class="flex items-center gap-3">
+      <svg width="28" height="28" viewBox="0 0 38 38" fill="none">
+        <defs>
+          <linearGradient id="fg" x1="0" y1="0" x2="38" y2="38" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#f5d78e"/><stop offset="50%" stop-color="#c9a84c"/><stop offset="100%" stop-color="#f5d78e"/>
+          </linearGradient>
+        </defs>
+        <path d="M6 8 L6 30 L11 30 L11 17 L22 30 L27 30 L27 8 L22 8 L22 21 L11 8 Z" fill="url(#fg)"/>
+        <rect x="29" y="8" width="3" height="22" rx="1.5" fill="url(#fg)" opacity="0.5"/>
+      </svg>
+      <span class="font-black tracking-widest gradient-text">NEXTRIBE</span>
+    </div>
+    <nav class="flex gap-8 text-xs text-gray-500 tracking-widest">
+      <a href="#about" class="hover:text-yellow-400 transition-colors">ABOUT</a>
+      <a href="#service" class="hover:text-yellow-400 transition-colors">SERVICE</a>
+      <a href="/company" class="hover:text-yellow-400 transition-colors">COMPANY</a>
+      <a href="#recruit" class="hover:text-yellow-400 transition-colors">RECRUIT</a>
+      <a href="#contact" class="hover:text-yellow-400 transition-colors">CONTACT</a>
+    </nav>
+    <p class="text-xs text-gray-600">© 2026 株式会社NEXTRIBE</p>
+  </div>
+</footer>
+
+<style>
+  @keyframes ping {
+    75%, 100% { transform: scale(2); opacity: 0; }
+  }
+</style>
+
+<script>
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar?.classList.toggle('nav-scrolled', window.scrollY > 50);
+  });
+
+  const menuBtn = document.getElementById('menu-btn');
+  const menuClose = document.getElementById('menu-close');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const toggleMenu = () => mobileMenu?.classList.toggle('hidden');
+  menuBtn?.addEventListener('click', toggleMenu);
+  menuClose?.addEventListener('click', toggleMenu);
+  document.querySelectorAll('.mobile-link').forEach(l => l.addEventListener('click', () => mobileMenu?.classList.add('hidden')));
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => observer.observe(el));
+
+  const countObserver = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      const target = parseInt(e.target.getAttribute('data-count') || '0');
+      let cur = 0;
+      const timer = setInterval(() => {
+        cur += target / 40;
+        if (cur >= target) { e.target.textContent = target.toString(); clearInterval(timer); }
+        else e.target.textContent = Math.floor(cur).toString();
+      }, 30);
+      countObserver.unobserve(e.target);
+    });
+  }, { threshold: 0.5 });
+  document.querySelectorAll('[data-count]').forEach(el => countObserver.observe(el));
+</script>
+
+</body>
+</html>

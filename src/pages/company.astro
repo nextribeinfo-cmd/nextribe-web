@@ -1,0 +1,163 @@
+---
+import '../styles/global.css';
+---
+
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="株式会社NEXTRIBE 会社概要" />
+  <title>会社概要 | 株式会社NEXTRIBE</title>
+  <link rel="icon" href="/favicon.ico" />
+</head>
+<body>
+
+<!-- Navigation -->
+<nav id="navbar" class="fixed top-0 w-full z-50 py-4 px-6 md:px-12 flex items-center justify-between transition-all duration-300">
+  <a href="/" class="flex items-center gap-3">
+    <svg width="38" height="38" viewBox="0 0 38 38" fill="none">
+      <defs>
+        <linearGradient id="ng" x1="0" y1="0" x2="38" y2="38" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="#f5d78e"/>
+          <stop offset="50%" stop-color="#c9a84c"/>
+          <stop offset="100%" stop-color="#f5d78e"/>
+        </linearGradient>
+      </defs>
+      <path d="M6 8 L6 30 L11 30 L11 17 L22 30 L27 30 L27 8 L22 8 L22 21 L11 8 Z" fill="url(#ng)"/>
+      <rect x="29" y="8" width="3" height="22" rx="1.5" fill="url(#ng)" opacity="0.5"/>
+    </svg>
+    <span class="text-lg font-black tracking-widest gradient-text">NEXTRIBE</span>
+  </a>
+  <ul class="hidden md:flex gap-10 text-sm tracking-wider text-gray-300">
+    <li><a href="/#about" class="hover:text-yellow-400 transition-colors">ABOUT</a></li>
+    <li><a href="/#service" class="hover:text-yellow-400 transition-colors">SERVICE</a></li>
+    <li><a href="/company" class="text-yellow-400">COMPANY</a></li>
+    <li><a href="/#recruit" class="hover:text-yellow-400 transition-colors">RECRUIT</a></li>
+    <li><a href="/#contact" class="hover:text-yellow-400 transition-colors">CONTACT</a></li>
+  </ul>
+</nav>
+
+<!-- Hero -->
+<section class="relative pt-40 pb-24 px-6 overflow-hidden">
+  <div class="absolute inset-0" style="background-image: linear-gradient(rgba(201,168,76,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(201,168,76,0.04) 1px, transparent 1px); background-size: 60px 60px;"></div>
+  <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[300px] opacity-10" style="background: radial-gradient(ellipse, #c9a84c 0%, transparent 70%);"></div>
+  <div class="relative max-w-6xl mx-auto">
+    <p class="text-yellow-400 text-xs tracking-[0.4em] mb-4 reveal">COMPANY</p>
+    <h1 class="text-5xl md:text-7xl font-black mb-6 reveal">会社概要</h1>
+    <div class="h-px w-16 reveal" style="background: linear-gradient(90deg, #c9a84c, transparent);"></div>
+  </div>
+</section>
+
+<!-- Company Info -->
+<section class="py-20 px-6">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid md:grid-cols-2 gap-12">
+
+      <!-- 基本情報 -->
+      <div class="reveal-left">
+        <h2 class="text-xl font-bold gradient-text tracking-wider mb-8">基本情報</h2>
+        <div class="rounded-2xl overflow-hidden" style="border: 1px solid rgba(201,168,76,0.2);">
+          <div style="background: linear-gradient(135deg, rgba(201,168,76,0.06), rgba(0,0,0,0.2));">
+            {[
+              { label: '会社名', value: '株式会社NEXTRIBE' },
+              { label: '代表取締役', value: '村田 雄哉' },
+              { label: '設立', value: '2016年10月14日' },
+              { label: '所在地', value: '福岡県福岡市城南区荒江1丁目34-18-202' },
+              { label: '事業内容', value: 'モバイルキャリア販売代行' },
+              { label: '対応キャリア', value: 'docomo / au / SoftBank' },
+              { label: '活動エリア', value: '九州を中心に全国各地' },
+            ].map(item => (
+              <div class="flex items-start gap-6 px-8 py-5 border-b border-white/5 last:border-0">
+                <span class="text-xs text-yellow-400 tracking-wider w-28 shrink-0 pt-0.5">{item.label}</span>
+                <span class="text-sm text-gray-200 leading-relaxed">{item.value}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <!-- 代表メッセージ -->
+      <div class="reveal-right">
+        <h2 class="text-xl font-bold gradient-text tracking-wider mb-8">代表メッセージ</h2>
+        <div class="rounded-2xl p-8 h-full" style="background: linear-gradient(135deg, rgba(201,168,76,0.06), rgba(0,0,0,0.2)); border: 1px solid rgba(201,168,76,0.2);">
+          <div class="flex items-center gap-4 mb-8">
+            <div class="w-16 h-16 rounded-full flex items-center justify-center text-2xl font-black gradient-text" style="border: 1px solid rgba(201,168,76,0.3); background: rgba(201,168,76,0.05);">村</div>
+            <div>
+              <p class="font-bold text-white">村田 雄哉</p>
+              <p class="text-xs text-yellow-400 tracking-wider mt-1">代表取締役</p>
+            </div>
+          </div>
+          <p class="text-gray-400 leading-loose text-sm">
+            NEXTRIBEは「次の部族（NEXT TRIBE）」という名のとおり、次世代を担う仲間たちと共に、通信という社会インフラを現場から支え続けることを使命としています。
+          </p>
+          <p class="text-gray-400 leading-loose text-sm mt-4">
+            少数精鋭だからこそ実現できる機動力と、一人ひとりの成長を大切にするチーム文化を根幹に、福岡から全国へと歩みを進めてまいります。
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Map / Access -->
+<section class="py-20 px-6">
+  <div class="max-w-6xl mx-auto">
+    <div class="reveal mb-12">
+      <h2 class="text-xl font-bold gradient-text tracking-wider mb-2">所在地</h2>
+      <p class="text-gray-400 text-sm">〒814-0101 福岡県福岡市城南区荒江1丁目34-18-202</p>
+    </div>
+    <div class="reveal rounded-2xl overflow-hidden" style="border: 1px solid rgba(201,168,76,0.2); height: 400px;">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.8!2d130.37!3d33.56!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDMzJzQyLjAiTiAxMzDCsDIyJzEyLjAiRQ!5e0!3m2!1sja!2sjp!4v1"
+        width="100%"
+        height="400"
+        style="border:0; filter: invert(90%) hue-rotate(180deg);"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="py-24 px-6 text-center">
+  <div class="reveal max-w-xl mx-auto">
+    <p class="text-gray-400 mb-8">採用・事業に関するお問い合わせはこちら</p>
+    <a href="/#contact" class="gold-btn inline-block px-12 py-4 rounded-full text-black font-bold text-sm tracking-widest">お問い合わせ</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-12 px-6 border-t border-white/5">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+    <a href="/" class="flex items-center gap-3">
+      <svg width="28" height="28" viewBox="0 0 38 38" fill="none">
+        <defs>
+          <linearGradient id="fg" x1="0" y1="0" x2="38" y2="38" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#f5d78e"/><stop offset="50%" stop-color="#c9a84c"/><stop offset="100%" stop-color="#f5d78e"/>
+          </linearGradient>
+        </defs>
+        <path d="M6 8 L6 30 L11 30 L11 17 L22 30 L27 30 L27 8 L22 8 L22 21 L11 8 Z" fill="url(#fg)"/>
+        <rect x="29" y="8" width="3" height="22" rx="1.5" fill="url(#fg)" opacity="0.5"/>
+      </svg>
+      <span class="font-black tracking-widest gradient-text">NEXTRIBE</span>
+    </a>
+    <p class="text-xs text-gray-600">© 2026 株式会社NEXTRIBE. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar?.classList.toggle('nav-scrolled', window.scrollY > 50);
+  });
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
