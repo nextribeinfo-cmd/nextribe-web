@@ -195,7 +195,7 @@ const recruitRows = [
             未経験でも、接客が好きな方、人と話すことが好きな方を歓迎します。
             現場での経験を重ねながら、販売スキルや提案力を身につけられます。
           </p>
-          <a class="primary-btn" href="#contact">応募・お問い合わせ</a>
+          <a class="primary-btn recruit-btn-desktop" href="#contact">応募・お問い合わせ</a>
         </div>
         <div class="recruit-card reveal-right">
           {recruitRows.map(([label, value]) => (
@@ -204,6 +204,7 @@ const recruitRows = [
               <strong set:html={value} />
             </div>
           ))}
+          <a class="primary-btn recruit-btn-mobile" href="#contact">応募・お問い合わせ</a>
         </div>
       </section>
 

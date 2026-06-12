@@ -88,6 +88,8 @@ button, input, textarea, select { font: inherit; }
   width: auto;
 }
 
+.recruit-btn-mobile { display: none; }
+
 .mark-shadow {
   fill: rgba(243,217,138,0.12);
 }
@@ -754,6 +756,14 @@ button, input, textarea, select { font: inherit; }
   .site-footer {
     flex-direction: column;
     text-align: center;
+  }
+
+  .recruit-btn-desktop { display: none; }
+  .recruit-btn-mobile {
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 26px;
+    width: 100%;
   }
 }
 
