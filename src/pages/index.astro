@@ -32,8 +32,8 @@ const companyRows = [
 ];
 
 const recruitRows = [
-  ['雇用形態', '正社員'],
-  ['給与', '月給 280,000円〜'],
+  ['雇用形態', '正社員 / アルバイト'],
+  ['給与', '正社員：月給 280,000円〜<br />アルバイト：時給 2,000円〜'],
   ['賞与', '業績により支給'],
   ['勤務地', '九州を中心に全国各地'],
   ['勤務時間', 'シフト制'],
@@ -201,7 +201,7 @@ const recruitRows = [
           {recruitRows.map(([label, value]) => (
             <div>
               <span>{label}</span>
-              <strong>{value}</strong>
+              <strong set:html={value} />
             </div>
           ))}
         </div>
