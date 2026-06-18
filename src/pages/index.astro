@@ -4,18 +4,21 @@ import '../styles/global.css';
 const services = [
   {
     number: '01',
+    icon: `<svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sg1" x1="0" y1="0" x2="64" y2="64"><stop offset="0" stop-color="#5aa6ff"/><stop offset="1" stop-color="#2b6fe0"/></linearGradient></defs><rect x="20" y="8" width="24" height="48" rx="5" stroke="url(#sg1)" stroke-width="2.5"/><line x1="28" y1="49" x2="36" y2="49" stroke="url(#sg1)" stroke-width="2.5" stroke-linecap="round"/><path d="M48 18a8 8 0 0 1 0 12" stroke="#5aa6ff" stroke-width="2.2" stroke-linecap="round"/><path d="M52 13a15 15 0 0 1 0 22" stroke="#5aa6ff" stroke-width="2.2" stroke-linecap="round" opacity="0.55"/><circle cx="32" cy="22" r="2.4" fill="#5aa6ff"/></svg>`,
     title: 'モバイル端末販売',
     lead: '売り場に立ち、来店されたお客様へ最適な提案を行います。',
     desc: '家電量販店・商業施設などで、docomo・au・SoftBankの販売業務を担当します。',
   },
   {
     number: '02',
+    icon: `<svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sg2" x1="0" y1="0" x2="64" y2="64"><stop offset="0" stop-color="#5aa6ff"/><stop offset="1" stop-color="#2b6fe0"/></linearGradient></defs><rect x="10" y="22" width="22" height="34" rx="2" stroke="url(#sg2)" stroke-width="2.5"/><path d="M32 32h16a2 2 0 0 1 2 2v22H32" stroke="url(#sg2)" stroke-width="2.5"/><line x1="16" y1="30" x2="20" y2="30" stroke="#5aa6ff" stroke-width="2" stroke-linecap="round"/><line x1="22" y1="30" x2="26" y2="30" stroke="#5aa6ff" stroke-width="2" stroke-linecap="round"/><line x1="16" y1="38" x2="20" y2="38" stroke="#5aa6ff" stroke-width="2" stroke-linecap="round"/><line x1="22" y1="38" x2="26" y2="38" stroke="#5aa6ff" stroke-width="2" stroke-linecap="round"/><line x1="38" y1="42" x2="44" y2="42" stroke="#5aa6ff" stroke-width="2" stroke-linecap="round"/><path d="M40 8l6 6-6 6" stroke="#5aa6ff" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M46 14H34a6 6 0 0 0-6 6v2" stroke="#5aa6ff" stroke-width="2.3" stroke-linecap="round"/></svg>`,
     title: '法人営業サポート',
     lead: '企業向けの通信回線・端末導入をサポートします。',
     desc: '中小企業のお客様を中心に、利用状況に合わせた提案と営業支援を行います。',
   },
   {
     number: '03',
+    icon: `<svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sg3" x1="0" y1="0" x2="64" y2="64"><stop offset="0" stop-color="#5aa6ff"/><stop offset="1" stop-color="#2b6fe0"/></linearGradient></defs><path d="M32 10c-7 0-12 5-12 12 0 8 12 22 12 22s12-14 12-22c0-7-5-12-12-12z" stroke="url(#sg3)" stroke-width="2.5" stroke-linejoin="round"/><circle cx="32" cy="22" r="4.5" stroke="url(#sg3)" stroke-width="2.5"/><path d="M14 40c-2 1-4 3-4 6 0 4 5 6 10 6" stroke="#5aa6ff" stroke-width="2.2" stroke-linecap="round" opacity="0.6"/><path d="M50 40c2 1 4 3 4 6 0 4-5 6-10 6" stroke="#5aa6ff" stroke-width="2.2" stroke-linecap="round" opacity="0.6"/><circle cx="14" cy="34" r="2.4" fill="#5aa6ff" opacity="0.7"/><circle cx="50" cy="34" r="2.4" fill="#5aa6ff" opacity="0.7"/></svg>`,
     title: '販売スタッフ配置',
     lead: 'イベントや店舗の状況に合わせてスタッフを配置します。',
     desc: '九州を中心に全国各地へ、短期・長期どちらの現場にも柔軟に対応します。',
@@ -205,6 +208,7 @@ const recruitRows = [
         <div class="service-grid">
           {services.map((service, index) => (
             <article class="service-card reveal" style={`transition-delay:${index * 0.12}s`}>
+              <div class="service-icon" set:html={service.icon} />
               <span>{service.number}</span>
               <h3>{service.title}</h3>
               <strong>{service.lead}</strong>
