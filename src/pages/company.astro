@@ -30,22 +30,22 @@ import '../styles/global.css';
     <span class="text-lg font-black tracking-widest gradient-text">NEXTRIBE</span>
   </a>
   <ul class="hidden md:flex gap-10 text-sm tracking-wider text-gray-300">
-    <li><a href="/#about" class="hover:text-yellow-400 transition-colors">ABOUT</a></li>
-    <li><a href="/#service" class="hover:text-yellow-400 transition-colors">SERVICE</a></li>
-    <li><a href="/company" class="text-yellow-400">COMPANY</a></li>
-    <li><a href="/#recruit" class="hover:text-yellow-400 transition-colors">RECRUIT</a></li>
-    <li><a href="/#contact" class="hover:text-yellow-400 transition-colors">CONTACT</a></li>
+    <li><a href="/#about" class="hover:text-blue-400 transition-colors">ABOUT</a></li>
+    <li><a href="/#service" class="hover:text-blue-400 transition-colors">SERVICE</a></li>
+    <li><a href="/company" class="text-blue-400">COMPANY</a></li>
+    <li><a href="/#recruit" class="hover:text-blue-400 transition-colors">RECRUIT</a></li>
+    <li><a href="/#contact" class="hover:text-blue-400 transition-colors">CONTACT</a></li>
   </ul>
 </nav>
 
 <!-- Hero -->
 <section class="relative pt-40 pb-24 px-6 overflow-hidden">
-  <div class="absolute inset-0" style="background-image: linear-gradient(rgba(201,168,76,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(201,168,76,0.04) 1px, transparent 1px); background-size: 60px 60px;"></div>
-  <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[300px] opacity-10" style="background: radial-gradient(ellipse, #c9a84c 0%, transparent 70%);"></div>
+  <div class="absolute inset-0" style="background-image: linear-gradient(rgba(43, 111, 224,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(43, 111, 224,0.04) 1px, transparent 1px); background-size: 60px 60px;"></div>
+  <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[300px] opacity-10" style="background: radial-gradient(ellipse, #3b8bf0 0%, transparent 70%);"></div>
   <div class="relative max-w-6xl mx-auto">
-    <p class="text-yellow-400 text-xs tracking-[0.4em] mb-4 reveal">COMPANY</p>
+    <p class="text-blue-400 text-xs tracking-[0.4em] mb-4 reveal">COMPANY</p>
     <h1 class="text-5xl md:text-7xl font-black mb-6 reveal">会社概要</h1>
-    <div class="h-px w-16 reveal" style="background: linear-gradient(90deg, #c9a84c, transparent);"></div>
+    <div class="h-px w-16 reveal" style="background: linear-gradient(90deg, #3b8bf0, transparent);"></div>
   </div>
 </section>
 
@@ -57,8 +57,8 @@ import '../styles/global.css';
       <!-- 基本情報 -->
       <div class="reveal-left">
         <h2 class="text-xl font-bold gradient-text tracking-wider mb-8">基本情報</h2>
-        <div class="rounded-2xl overflow-hidden" style="border: 1px solid rgba(201,168,76,0.2);">
-          <div style="background: linear-gradient(135deg, rgba(201,168,76,0.06), rgba(0,0,0,0.2));">
+        <div class="rounded-2xl overflow-hidden" style="border: 1px solid rgba(43, 111, 224,0.2);">
+          <div style="background: linear-gradient(135deg, rgba(43, 111, 224,0.06), rgba(0,0,0,0.2));">
             {[
               { label: '会社名', value: '株式会社NEXTRIBE' },
               { label: '代表取締役', value: '村田 雄哉' },
@@ -69,7 +69,7 @@ import '../styles/global.css';
               { label: '活動エリア', value: '九州を中心に全国各地' },
             ].map(item => (
               <div class="flex items-start gap-6 px-8 py-5 border-b border-white/5 last:border-0">
-                <span class="text-xs text-yellow-400 tracking-wider w-28 shrink-0 pt-0.5">{item.label}</span>
+                <span class="text-xs text-blue-400 tracking-wider w-28 shrink-0 pt-0.5">{item.label}</span>
                 <span class="text-sm text-gray-200 leading-relaxed">{item.value}</span>
               </div>
             ))}
@@ -80,12 +80,12 @@ import '../styles/global.css';
       <!-- 代表メッセージ -->
       <div class="reveal-right">
         <h2 class="text-xl font-bold gradient-text tracking-wider mb-8">代表メッセージ</h2>
-        <div class="rounded-2xl p-8 h-full" style="background: linear-gradient(135deg, rgba(201,168,76,0.06), rgba(0,0,0,0.2)); border: 1px solid rgba(201,168,76,0.2);">
+        <div class="rounded-2xl p-8 h-full" style="background: linear-gradient(135deg, rgba(43, 111, 224,0.06), rgba(0,0,0,0.2)); border: 1px solid rgba(43, 111, 224,0.2);">
           <div class="flex items-center gap-4 mb-8">
-            <div class="w-16 h-16 rounded-full flex items-center justify-center text-2xl font-black gradient-text" style="border: 1px solid rgba(201,168,76,0.3); background: rgba(201,168,76,0.05);">村</div>
+            <div class="w-16 h-16 rounded-full flex items-center justify-center text-2xl font-black gradient-text" style="border: 1px solid rgba(43, 111, 224,0.3); background: rgba(43, 111, 224,0.05);">村</div>
             <div>
               <p class="font-bold text-white">村田 雄哉</p>
-              <p class="text-xs text-yellow-400 tracking-wider mt-1">代表取締役</p>
+              <p class="text-xs text-blue-400 tracking-wider mt-1">代表取締役</p>
             </div>
           </div>
           <p class="text-gray-400 leading-loose text-sm">
@@ -108,7 +108,7 @@ import '../styles/global.css';
       <h2 class="text-xl font-bold gradient-text tracking-wider mb-2">所在地</h2>
       <p class="text-gray-400 text-sm">〒814-0101 福岡県福岡市城南区荒江1丁目34-18-202</p>
     </div>
-    <div class="reveal rounded-2xl overflow-hidden" style="border: 1px solid rgba(201,168,76,0.2); height: 400px;">
+    <div class="reveal rounded-2xl overflow-hidden" style="border: 1px solid rgba(43, 111, 224,0.2); height: 400px;">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.8!2d130.37!3d33.56!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDMzJzQyLjAiTiAxMzDCsDIyJzEyLjAiRQ!5e0!3m2!1sja!2sjp!4v1"
         width="100%"
@@ -125,7 +125,7 @@ import '../styles/global.css';
 <section class="py-24 px-6 text-center">
   <div class="reveal max-w-xl mx-auto">
     <p class="text-gray-400 mb-8">採用・事業に関するお問い合わせはこちら</p>
-    <a href="/#contact" class="gold-btn inline-block px-12 py-4 rounded-full text-black font-bold text-sm tracking-widest">お問い合わせ</a>
+    <a href="/#contact" class="inline-block px-12 py-4 rounded-full text-white font-bold text-sm tracking-widest" style="background: linear-gradient(135deg, #163a86, #4f9bff 48%, #2b6fe0);">お問い合わせ</a>
   </div>
 </section>
 
