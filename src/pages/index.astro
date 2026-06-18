@@ -11,6 +11,7 @@ const services = [
   },
   {
     number: '02',
+    image: '/service-2.jpg',
     icon: `<svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sg2" x1="0" y1="0" x2="64" y2="64"><stop offset="0" stop-color="#5aa6ff"/><stop offset="1" stop-color="#2b6fe0"/></linearGradient></defs><rect x="10" y="22" width="22" height="34" rx="2" stroke="url(#sg2)" stroke-width="2.5"/><path d="M32 32h16a2 2 0 0 1 2 2v22H32" stroke="url(#sg2)" stroke-width="2.5"/><line x1="16" y1="30" x2="20" y2="30" stroke="#5aa6ff" stroke-width="2" stroke-linecap="round"/><line x1="22" y1="30" x2="26" y2="30" stroke="#5aa6ff" stroke-width="2" stroke-linecap="round"/><line x1="16" y1="38" x2="20" y2="38" stroke="#5aa6ff" stroke-width="2" stroke-linecap="round"/><line x1="22" y1="38" x2="26" y2="38" stroke="#5aa6ff" stroke-width="2" stroke-linecap="round"/><line x1="38" y1="42" x2="44" y2="42" stroke="#5aa6ff" stroke-width="2" stroke-linecap="round"/><path d="M40 8l6 6-6 6" stroke="#5aa6ff" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M46 14H34a6 6 0 0 0-6 6v2" stroke="#5aa6ff" stroke-width="2.3" stroke-linecap="round"/></svg>`,
     title: '法人営業サポート',
     lead: '企業向けの通信回線・端末導入をサポートします。',
@@ -207,8 +208,8 @@ const recruitRows = [
         </div>
         <div class="service-grid">
           {services.map((service, index) => (
-            <article class="service-card reveal" style={`transition-delay:${index * 0.12}s`}>
-              <div class="service-icon" set:html={service.icon} />
+            <article class:list={["service-card reveal", service.image && "has-photo"]} style={`transition-delay:${index * 0.12}s`}>
+              {service.image ? <img class="service-photo" src={service.image} alt={service.title} loading="lazy" /> : <div class="service-icon" set:html={service.icon} />}
               <span>{service.number}</span>
               <h3>{service.title}</h3>
               <strong>{service.lead}</strong>
